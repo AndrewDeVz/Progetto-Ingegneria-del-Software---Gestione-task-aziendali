@@ -1,0 +1,58 @@
+giu 24, 2024 5:39:59 PM Entity.EntityManager autenticazione
+INFO: Tentativo di autenticazione in corso
+giu 24, 2024 5:39:59 PM Entity.EntityManager prelevaManagerDaDB
+INFO: Tentativo di prelievo dal DB del manager id=737373
+giu 24, 2024 5:39:59 PM Database.ManagerDAO selectById
+INFO: Tentativo di eseguire la query: SELECT * FROM manager WHERE id = 737373;
+giu 24, 2024 5:40:00 PM Database.DBManager getConnection
+INFO: Connessione al database jdbc:mysql://localhost:3306/azienda avvenuta con successo
+giu 24, 2024 5:40:00 PM Database.ManagerDAO selectById
+INFO: Query eseguita con successo
+giu 24, 2024 5:40:10 PM Entity.EntityTask prelevaTuttiTask
+INFO: Tentativo di prelievo di tutti i task in corso
+giu 24, 2024 5:40:10 PM Database.TaskDAO selectAll
+INFO: Tentativo di eseguire la query: SELECT * FROM task
+giu 24, 2024 5:40:10 PM Database.DBManager getConnection
+INFO: Connessione al database jdbc:mysql://localhost:3306/azienda avvenuta con successo
+giu 24, 2024 5:40:10 PM Database.TaskDAO selectAll
+INFO: Query eseguita con successo
+giu 24, 2024 5:40:10 PM Entity.EntityDipendente prelevaDipendenteDaDB
+INFO: Tentativo di prelievio dal DB del dipendente id=123456
+giu 24, 2024 5:40:10 PM Database.DipendenteDAO selectById
+INFO: Tentativo di eseguire la query: SELECT * FROM dipendente WHERE id = 123456;
+giu 24, 2024 5:40:10 PM Database.DBManager getConnection
+INFO: Connessione al database jdbc:mysql://localhost:3306/azienda avvenuta con successo
+giu 24, 2024 5:40:10 PM Database.DipendenteDAO selectById
+INFO: Query eseguita con successo
+giu 24, 2024 5:40:19 PM Entity.EntityTask contaTaskPerStato
+INFO: Conteggio di tutti i task con stato=DA_ASSEGNARE in corso
+giu 24, 2024 5:40:19 PM Database.TaskDAO countTasksByStato
+INFO: Tentativo di eseguire la query: SELECT COUNT(*) AS task_count FROM task WHERE Stato = 'DA_ASSEGNARE'
+giu 24, 2024 5:40:19 PM Database.DBManager getConnection
+INFO: Connessione al database jdbc:mysql://localhost:3306/azienda avvenuta con successo
+giu 24, 2024 5:40:19 PM Database.TaskDAO countTasksByStato
+INFO: Query eseguita con successo
+giu 24, 2024 5:40:19 PM Entity.EntityTask contaTaskPerStato
+INFO: Conteggio di tutti i task con stato=ASSEGNATO in corso
+giu 24, 2024 5:40:19 PM Database.TaskDAO countTasksByStato
+INFO: Tentativo di eseguire la query: SELECT COUNT(*) AS task_count FROM task WHERE Stato = 'ASSEGNATO'
+giu 24, 2024 5:40:19 PM Database.DBManager getConnection
+INFO: Connessione al database jdbc:mysql://localhost:3306/azienda avvenuta con successo
+giu 24, 2024 5:40:19 PM Database.TaskDAO countTasksByStato
+INFO: Query eseguita con successo
+giu 24, 2024 5:40:20 PM Entity.EntityTask contaTaskPerStato
+INFO: Conteggio di tutti i task con stato=IN_LAVORAZIONE in corso
+giu 24, 2024 5:40:20 PM Database.TaskDAO countTasksByStato
+INFO: Tentativo di eseguire la query: SELECT COUNT(*) AS task_count FROM task WHERE Stato = 'IN_LAVORAZIONE'
+giu 24, 2024 5:40:20 PM Database.DBManager getConnection
+INFO: Connessione al database jdbc:mysql://localhost:3306/azienda avvenuta con successo
+giu 24, 2024 5:40:20 PM Database.TaskDAO countTasksByStato
+INFO: Query eseguita con successo
+giu 24, 2024 5:40:20 PM Entity.EntityTask contaTaskPerStato
+INFO: Conteggio di tutti i task con stato=TERMINATO in corso
+giu 24, 2024 5:40:20 PM Database.TaskDAO countTasksByStato
+INFO: Tentativo di eseguire la query: SELECT COUNT(*) AS task_count FROM task WHERE Stato = 'TERMINATO'
+giu 24, 2024 5:40:20 PM Database.DBManager getConnection
+INFO: Connessione al database jdbc:mysql://localhost:3306/azienda avvenuta con successo
+giu 24, 2024 5:40:20 PM Database.TaskDAO countTasksByStato
+INFO: Query eseguita con successo
